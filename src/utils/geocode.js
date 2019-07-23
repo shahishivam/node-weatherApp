@@ -3,7 +3,7 @@ var geocodeAddress=(address,callback)=>{
   var encodedAddress=encodeURIComponent(address);
   request({
     url:`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodedAddress}.json?access_token=pk.eyJ1Ijoic2hpdmFtMjE5NyIsImEiOiJjanh1ZndzbDExMHp2M2JvMTlqam8yYWx3In0.aGA8CmO_FouxAMZxKm8hBg`,
-    'proxy':'http://192.162.0.103:3128',
+    // 'proxy':'http://192.162.0.103:3128',
     json:true
   },(error,response)=>{
      //console.log(JSON.stringify(body,undefined,2));
